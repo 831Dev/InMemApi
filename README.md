@@ -2,7 +2,7 @@
 
 In-Memory REST Api for Demo Purposes 
 
-Built using ASP.NET Core 1.1
+Built using ASP.NET Core 1.1 - https://www.microsoft.com/net/core#macos
 
 ### RUN LOCALLY
 
@@ -11,8 +11,4 @@ Built using ASP.NET Core 1.1
 3. dotnet build
 4. dotnet run
 5. open http://localhost:5000/api/product
-
-### RUN ON HEROKU
-
-
 
