@@ -26,9 +26,9 @@ namespace InMemApi
                 .UseConfiguration(config)
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
-		.UseUrls(url);
+		        //.UseUrls(url)
                 .UseStartup<Startup>()
-		.Build();
+		        .Build();
             host.Run();
         }
     }
