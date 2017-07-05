@@ -14,7 +14,7 @@ namespace InMemApi
         public static void Main(string[] args)
         {
 
-            var url = $"http://*:{Environment.GetEnvironmentVariable("PORT")}/"; 
+            var url = $"http://*:80/"; 
             Console.WriteLine($"Using Url: {url}");
 
 			var config = new ConfigurationBuilder()
