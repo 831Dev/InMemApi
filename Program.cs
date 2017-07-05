@@ -14,6 +14,9 @@ namespace InMemApi
         public static void Main(string[] args)
         {
 
+            var url = $"http://*:{Environment.GetEnvironmentVariable("PORT")}/"; 
+            Console.WriteLine($"Using Url: {url}");
+
 			var config = new ConfigurationBuilder()
 				.AddCommandLine(args)
 				.Build();
@@ -23,10 +26,14 @@ namespace InMemApi
                 .UseConfiguration(config)
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
-                .UseStartup<Startup>()
-                .Build();
+                .UseStartup<Startup>();
 
-            host.Run();
+            if (String.IsNullOrEmpty(url)){
+                host.UseUrls(url);
+            }
+            var hostBuild = host.Build();
+
+            hostBuild.Run();
         }
     }
 }
