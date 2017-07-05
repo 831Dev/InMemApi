@@ -26,14 +26,10 @@ namespace InMemApi
                 .UseConfiguration(config)
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
-                .UseStartup<Startup>();
-
-            if (String.IsNullOrEmpty(url)){
-                host.UseUrls(url);
-            }
-            var hostBuild = host.Build();
-
-            hostBuild.Run();
+		.UseUrls(url);
+                .UseStartup<Startup>()
+		.Build();
+            host.Run();
         }
     }
 }
