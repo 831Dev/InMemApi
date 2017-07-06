@@ -5,10 +5,8 @@ using InMemApi.Services;
 
 namespace InMemApi.Controllers
 {
-
     public class ProductsController : Controller
-    {
-        
+    {        
         readonly InMemoryRepository _inmemoryRepo;
 
         public ProductsController(InMemoryRepository inmemoryRepo)
