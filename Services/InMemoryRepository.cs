@@ -61,12 +61,12 @@ namespace InMemApi.Services
             Add(new Product { Name = "KitKat", Price = 1.99m });
             Add(new Product { Name = "Fritos", Price = 3.34m });
             Add(new Product { Name = "Gum", Price = 0.55m });
-            Add(new Product { Name = "Smokes", Price = 11.44m });
-			Add(new Product { Name = "Donut", Price = 0.99m });
-			Add(new Product { Name = "Nachos", Price = 5.99m });
-			Add(new Product { Name = "Dog Food", Price = 20.34m });
-			Add(new Product { Name = "Coffee", Price = 1.25m });
-			Add(new Product { Name = "Snickers", Price = 1.76m });
+            Add(new Product { Name = "Fire Log", Price = 11.44m });
+	    Add(new Product { Name = "Donut", Price = 0.99m });
+	    Add(new Product { Name = "Nachos", Price = 5.99m });
+	    Add(new Product { Name = "Yogurt", Price = 2.34m });
+	    Add(new Product { Name = "Coffee", Price = 1.25m });
+	    Add(new Product { Name = "Snickers", Price = 1.76m });
         }
 
     }
